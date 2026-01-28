@@ -25,7 +25,7 @@ A modern, responsive web application for genomic sequence analysis and visualiza
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Adams-404/genome-insight-hub.git
+   git clone https://github.com/Basira-Institute/genome-insight.git
    cd genome-insight-hub
    ```
 
