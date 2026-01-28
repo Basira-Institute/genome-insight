@@ -155,7 +155,7 @@ export const Sidebar = () => {
                       </div>
                       {!collapsed && (
                         <div className="flex-1 min-w-0">
-                          <div className="font-medium text-sm">{item.title}</div>
+                          <div className={`font-medium text-sm ${isActive(item.url) ? item.textColor : ''}`}>{item.title}</div>
                           <div className="text-xs text-muted-foreground/80 truncate">{item.description}</div>
                         </div>
                       )}
@@ -186,7 +186,7 @@ export const Sidebar = () => {
                       </div>
                       {!collapsed && (
                         <div className="flex-1 flex items-center justify-between">
-                          <span className="font-medium text-sm">{item.title}</span>
+                          <span className={`font-medium text-sm ${isActive(item.url) ? item.textColor : ''}`}>{item.title}</span>
                           {item.badge && (
                             <Badge variant="outline" className="text-xs bg-primary/10 text-primary border-primary/20">
                               {item.badge}
@@ -220,7 +220,7 @@ export const Sidebar = () => {
                         <item.icon className={`h-5 w-5 shrink-0 ${isActive(item.url) ? item.textColor : 'text-muted-foreground group-hover:text-foreground'}`} />
                       </div>
                       {!collapsed && (
-                        <span className="font-medium text-sm">{item.title}</span>
+                        <span className={`font-medium text-sm ${isActive(item.url) ? item.textColor : ''}`}>{item.title}</span>
                       )}
                     </NavLink>
                   </SidebarMenuButton>
